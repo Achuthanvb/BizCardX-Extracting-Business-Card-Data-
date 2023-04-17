@@ -324,7 +324,7 @@ elif page_select=="Explore data":
 
         row_num = ((selected[selected["ID"] == id1].index)[0])
         #st.write((id1))
-        st.write(row_num)
+        #st.write(row_num)
 
         column_value = (st.multiselect(':blue[Select column to edit]', op))
 
@@ -332,7 +332,7 @@ elif page_select=="Explore data":
             st.write("write",i)
             names = i + '1'
             val=str(selected.at[int(row_num),i])#.iat[0,1])
-            st.write(val)
+            #st.write(val)
             names = st.text_input(i, value=val, label_visibility='visible', disabled=False)
 
             up_bt = st.button(":red[Update]   " + str(i))
