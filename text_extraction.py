@@ -34,7 +34,8 @@ st.header(':green[Data extraction from business card]')
 #page navigation
 c1,c2=st.columns([5,3])
 with c1:
-    page_select=st.selectbox(":blue[Select Page]",("Extract Data","Explore data"))
+    #page_select=st.selectbox(":blue[Select Page]",("Extract Data","Explore data"))
+    tab1,tab2=st.tabs(["Extract Data","Explore data"])
 def convertToBinaryData(filename):
     # Convert digital data to binary format
     with open(filename, 'rb') as file:
@@ -46,7 +47,7 @@ def convert_data(binarydata,filename):
     return image
 
 
-if page_select=='Extract Data':
+with tab1:
 
     img1 = st.file_uploader(":blue[Upload Image]", type=["png", "jpg", "jpeg"])
     if img1 is not None:
@@ -270,7 +271,7 @@ if page_select=='Extract Data':
 
 
 #Explore data , View, Edit, update
-elif page_select=="Explore data":
+with tab2:
     st.title(':blue[Explore Card detials :]  :orange[View Edit]')
     #fetching data
     def show_database():
