@@ -1,4 +1,7 @@
 # BizCardX-Extracting-Business-Card-Data-
+![Screenshot (911)](https://github.com/Achuthanvb/BizCardX-Extracting-Business-Card-Data-/assets/123528633/46aa0e72-aab9-426c-ba19-434ffe03c109)
+![Screenshot (910)](https://github.com/Achuthanvb/BizCardX-Extracting-Business-Card-Data-/assets/123528633/a1166879-6b2d-4c42-8055-8d2bc820371d)
+
 1-->Importing all necessary libraries
 
 2-->Connecting to MySql database
